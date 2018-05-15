@@ -10,11 +10,12 @@ app.get('/', function(req, res) {
         { name: 'Martini', drunkness: 5 },
         { name: 'Scotch', drunkness: 10 }
     ];
-    var tagline = ""Any code of your own that you haven't looked at for six or more months might as well have been written by someone else.";
-
+    var tagline = "Any code of your own that you haven't looked at for six or more months might as well have been written by someone else.";
+    var tagline2 = "yo im another tagline";
 	res.render('pages/index', {
         drinks: drinks,
-        tagline: tagline
+        tagline: tagline,
+        tagline2: tagline2
     });
 });
 
